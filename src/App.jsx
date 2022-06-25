@@ -7,8 +7,11 @@ import {Watchlist} from './components/Watchlist';
 import {Add} from './components/Add';
 import {Watched} from './components/Watched';
 
+import {GlobalProvider} from './context/GlobalState';
+
 function App() {
 	return (
+		<GlobalProvider>
 		<Router>
 			<Header />
 
@@ -18,6 +21,7 @@ function App() {
 				<Route exact path='/Add' element={<Add />} />
 			</Routes>
 		</Router>
+		</GlobalProvider>
 	);
 }
 
