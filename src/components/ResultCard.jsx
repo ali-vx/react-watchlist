@@ -19,9 +19,12 @@ export const ResultCard = ({movie}) => {
       </div>
       <div className="info">
         <div className="header">
-          <h3 className='title'>{movie.title}</h3>
+          <h3 className='title'>{movie.media_type === "movie" ? movie.title : movie.name}</h3>
           <h4 className='release-date'>
-            {movie.release_date ? movie.release_date.substring(0,4) : "unknown"}
+            {movie.media_type === "movie" ? 
+            (movie.release_date ? movie.release_date.substring(0,4) : "unknown") : (
+            movie.first_air_date ? movie.first_air_date.substring(0,4) : "unknown")
+          }
             </h4>
         </div>
         <div className="controls">

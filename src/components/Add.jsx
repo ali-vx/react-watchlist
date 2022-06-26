@@ -11,7 +11,7 @@ export const Add = () => {
     e.preventDefault();
     setQuery(e.target.value);
 
-    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`)
+    fetch(`https://api.themoviedb.org/3/search/multi?api_key=${API_KEY}&query=${query}`)
     .then(res => res.json())
     .then((data) => {
       if(!data.errors) {
@@ -20,6 +20,7 @@ export const Add = () => {
         setResults([]);
       }
     });
+    console.log(results);
   }
 
   return (
