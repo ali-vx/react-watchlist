@@ -13,7 +13,7 @@ export const Watchlist = () => {
 
           <span className="count-pill">
             {watchlist.length}
-            {watchlist.length === 1 ? ' movie' : ' movies'}
+            {watchlist.length === 1 ? ' title' : ' titles'}
           </span>
         </div>
         {watchlist.length > 0 ? (
@@ -23,7 +23,7 @@ export const Watchlist = () => {
           ))}
         </div>
         ) : (
-          <h2 className="no-movies">No Movies in Watchlist</h2>
+          <h2 className="no-movies">No Titles in Watchlist</h2>
         )}
       </div>
     </div>

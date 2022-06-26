@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
 :root {
-  --primary: #032541;
-  --secondary: #21d07a;
-  --white: #fff;
+  --primary: #24262d;
+  --secondary: #aaaad6;
+  --white: #edebef;
 }
 
 body {
@@ -58,7 +58,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #1aa762;
+  background-color: #9090bd;
   opacity: 1;
   cursor: pointer;
 }
