@@ -19,6 +19,7 @@ function App() {
 				<Route exact path='/' element={<Watchlist />} />
 				<Route exact path='/Watched' element={<Watched />} />
 				<Route exact path='/Add' element={<Add />} />
+				<Route exact path='/react-watchlist' element={<Watchlist />} />
 			</Routes>
 		</Router>
 		</GlobalProvider>
